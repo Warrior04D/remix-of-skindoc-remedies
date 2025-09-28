@@ -20,7 +20,7 @@ const productData = {
   1: {
     id: 1,
     name: "Vitamin C Brightening Serum",
-    brand: "LuxeDerm",
+    brand: "Himalaya",
     web: "https://amzn.in/d/iR5p0Nn",
     shortDescription: "Advanced vitamin C serum for radiant, glowing skin",
     longDescription: "Our clinically-proven Vitamin C Brightening Serum combines 20% L-Ascorbic Acid with stabilized vitamin E and ferulic acid to deliver maximum antioxidant protection and brightening benefits. This powerful formula targets dark spots, uneven skin tone, and dullness while promoting collagen synthesis for firmer, more youthful-looking skin.",
@@ -104,6 +104,7 @@ const productData = {
     id: 2,
     name: "Retinol Renewal Night Treatment",
     brand: "DermaCare",
+    web: "https://amzn.in/d/j6hXq0J",
     shortDescription: "Professional-strength retinol for anti-aging and skin renewal",
     longDescription: "Transform your skin overnight with our advanced Retinol Renewal Night Treatment. Formulated with 0.5% encapsulated retinol and botanical soothing agents, this treatment accelerates cell turnover, reduces fine lines, and improves skin texture while you sleep.",
     price: 156,
@@ -112,9 +113,9 @@ const productData = {
     rating: 4.9,
     reviewCount: 892,
     images: [
-      "/api/placeholder/600/600",
-      "/api/placeholder/600/600",
-      "/api/placeholder/600/600"
+      "https://m.media-amazon.com/images/I/41YNeaUzDNL._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/61O4ugO4t0L._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71o+DUwtokL._SX679_.jpg"
     ],
     category: "Treatments",
     skinType: ["Normal", "Dry", "Aging"],
