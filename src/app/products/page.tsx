@@ -21,7 +21,7 @@ const categories = [
     name: 'Face Care',
     web: "https://www.amazon.in/s?k=Face+care&crid=220GL9FQYS8X&sprefix=face+care%2Caps%2C351&ref=nb_sb_noss_1",
     description: 'Cleansers, serums, moisturizers and targeted treatments for facial skin',
-    image: '/images/face-care.jpg',
+    image: 'https://plus.unsplash.com/premium_photo-1682096423780-41ca1b04af68?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c2tpbiUyMGNhcmV8ZW58MHx8MHx8fDA%3D',
     productCount: 45
   },
   {
