@@ -367,7 +367,12 @@ export default function ProductDetailPage() {
                   size="lg"
                 >
                   <ShoppingCart className="h-5 w-5 mr-2" />
-                  Add to Cart - ${(product.price * quantity).toFixed(2)}
+                  <Link
+                    href="/products"
+                    className="inline-flex items-center rounded-md bg-accent px-4 py-2 text-white hover:opacity-90"
+                    >
+                    Add to Cart - ${(product.price * quantity).toFixed(2)}
+                    </Link>                  
                 </Button>
               </div>
 
