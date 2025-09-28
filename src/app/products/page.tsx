@@ -29,7 +29,7 @@ const categories = [
     name: 'Body Care',
     web: "https://www.amazon.in/s?k=Body+care&crid=ON4VRJ1CY832&sprefix=body+care%2Caps%2C356&ref=nb_sb_noss_1",
     description: 'Nourishing body lotions, treatments and specialized care products',
-    image: '/images/body-care.jpg',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDis-tKqmIwZCTkvhw34vSOGEGGL51Vtey4g&s',
     productCount: 28
   },
   {
@@ -37,7 +37,7 @@ const categories = [
     name: 'Treatments',
     web: "https://www.amazon.in/s?k=treatments&crid=2AXLIM1P9K077&sprefix=treatments4%2Caps%2C313&ref=nb_sb_noss",
     description: 'Professional-grade treatments for specific skin concerns and conditions',
-    image: '/images/treatments.jpg',
+    image: 'https://i0.wp.com/ellemesmedspa.com/wp-content/uploads/2022/02/overdoing-skincare-today-main-190509.jpg?fit=1240%2C620&ssl=1',
     productCount: 32
   },
   {
@@ -45,7 +45,7 @@ const categories = [
     name: 'Anti-Aging',
     web: "https://www.amazon.in/s?k=anti+ageing&crid=E0Z9KQ6QKOEE&sprefix=anti+ageing%2Caps%2C614&ref=nb_sb_noss_1",
     description: 'Advanced formulations to reduce fine lines and restore youthful radiance',
-    image: '/images/anti-aging.jpg',
+    image: 'https://metrohospitalfaridabad.com/wp-content/uploads/2021/12/aging.jpg',
     productCount: 38
   },
   {
@@ -53,7 +53,7 @@ const categories = [
     name: 'Acne Solutions',
     web: "https://www.amazon.in/s?k=acne+solution&crid=2171XMPPZTB4L&sprefix=acne+sol%2Caps%2C318&ref=nb_sb_ss_mvt-t11-ranker_1_8",
     description: 'Targeted products to clear breakouts and prevent future blemishes',
-    image: '/images/acne-solutions.jpg',
+    image: 'https://cdn.shopify.com/s/files/1/0390/2985/files/Pimple__Internal_Blog_Image_B_480x480.jpg?v=1730982943',
     productCount: 24
   },
   {
@@ -61,7 +61,7 @@ const categories = [
     name: 'Sensitive Skin',
     web: "https://www.amazon.in/s?k=sensitive+skin&rh=p_n_g-1003531120111%3A56164214031%2Cp_n_g-1003222579111%3A28044860031&dc&crid=331S3BCT4LYNA&qid=1759035789&rnid=28044857031&sprefix=sensitive+skin%2Caps%2C300&ref=sr_nr_p_n_g-1003222579111_3&ds=v1%3Ac0bm5p8vvmbTz25t55kOHXcffVrfOcLZXyzN%2B2xiXa4",
     description: 'Gentle, hypoallergenic formulations for reactive and sensitive skin types',
-    image: '/images/sensitive-skin.jpg',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzdKQlVOKZ-AJRO4qyMPeyzgPgBX5-JiT0mg&s',
     productCount: 19
   }
 ]
