@@ -21,6 +21,7 @@ const productData = {
     id: 1,
     name: "Vitamin C Brightening Serum",
     brand: "LuxeDerm",
+    web: "https://amzn.in/d/iR5p0Nn"
     shortDescription: "Advanced vitamin C serum for radiant, glowing skin",
     longDescription: "Our clinically-proven Vitamin C Brightening Serum combines 20% L-Ascorbic Acid with stabilized vitamin E and ferulic acid to deliver maximum antioxidant protection and brightening benefits. This powerful formula targets dark spots, uneven skin tone, and dullness while promoting collagen synthesis for firmer, more youthful-looking skin.",
     price: 89,
@@ -194,7 +195,7 @@ export default function ProductDetailPage() {
   }, [productId, router]);
 
   const handleAddToCart = () => {
-    toast.success(`Added ${quantity} ${product.name} to cart`);
+    toast.success(`Added ${quantity} ${product.web} to cart`);
   };
 
   const handleWishlist = () => {
@@ -367,12 +368,8 @@ export default function ProductDetailPage() {
                   size="lg"
                 >
                   <ShoppingCart className="h-5 w-5 mr-2" />
-                  <Link
-                    href="https://amzn.in/d/iR5p0Nn"
-                    className="inline-flex items-center rounded-md bg-accent px-4 py-2 text-white hover:opacity-90"
-                    >
-                    Add to Cart - ${(product.price * quantity).toFixed(2)}
-                    </Link>                  
+                  Add to Cart - ${(product.price * quantity).toFixed(2)}
+                                 
                 </Button>
               </div>
 
