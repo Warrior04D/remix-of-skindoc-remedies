@@ -362,20 +362,15 @@ export default function ProductDetailPage() {
                   </div>
                 </div>
 
-                <Button 
-                  onClick={handleAddToCart}
+                <Button
+                  asChild
                   className="w-full bg-accent hover:bg-accent/90 text-accent-foreground"
                   size="lg"
                 >
-                  <ShoppingCart className="h-5 w-5 mr-2" />
-                  <Link
-                    href="https://amzn.in/d/iR5p0Nn"
-                    className="inline-flex items-center rounded-md bg-accent px-4 py-2 text-white hover:opacity-90"
-                    >
+                  <Link href={product.web} target="_blank" rel="noopener noreferrer" className="inline-flex w-full items-center justify-center">
+                    <ShoppingCart className="h-5 w-5 mr-2" />
                     Add to Cart - ${(product.price * quantity).toFixed(2)}
-                    </Link>   
-                  
-                                 
+                  </Link>
                 </Button>
               </div>
 
