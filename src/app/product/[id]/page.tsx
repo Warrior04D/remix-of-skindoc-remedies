@@ -164,7 +164,7 @@ const productData = {
   id:2,
   name: "Gentle Acne Clearing Complex",
   brand: "DermaCare",
-  web: "https://amzn.in/d/6xVf3kL",
+  web: "https://amzn.in/d/cHsYHv3",
   shortDescription: "Lightweight treatment for acne-prone skin with salicylic acid and soothing botanicals",
   longDescription: "Fight breakouts without irritation using our Gentle Acne Clearing Complex. Formulated with 2% salicylic acid, niacinamide, and soothing green tea extract, this treatment clears clogged pores, reduces acne, and controls excess oil while keeping skin balanced and calm. Suitable for daily use on sensitive and acne-prone skin.",
   price: 149,
@@ -173,9 +173,10 @@ const productData = {
   rating: 4.6,
   reviewCount: 954,
   images: [
-    "https://m.media-amazon.com/images/I/61TfV8x7uCL._SX679_.jpg",
-    "https://m.media-amazon.com/images/I/71NbOeQnQdL._SX679_.jpg",
-    "https://m.media-amazon.com/images/I/81vssHnLxVL._SX679_.jpg"
+    "https://m.media-amazon.com/images/I/51Mjc2krNbL._SX522_.jpg",
+    "https://m.media-amazon.com/images/I/71HvSNwmHuL._SX466_.jpg",
+    "https://m.media-amazon.com/images/I/61Wmp6GOhIL._SX466_.jpg",
+    "https://m.media-amazon.com/images/I/71GZClRVX7L._SX466_.jpg"
   ],
   category: "Treatments",
   skinType: ["Oily", "Combination", "Acne-prone", "Sensitive"],
@@ -236,7 +237,7 @@ const productData = {
   id: 4,
   name: "Ultra Hydrating Barrier Cream",
   brand: "DermaCare",
-  web: "https://amzn.in/d/2yGh4mJ",
+  web: "https://amzn.in/d/ilheWvT",
   shortDescription: "Rich cream that restores and strengthens the skin’s natural barrier",
   longDescription: "Protect and deeply nourish your skin with our Ultra Hydrating Barrier Cream. Formulated with ceramides, squalane, and hyaluronic acid, this dermatologist-developed cream locks in moisture, repairs barrier function, and calms irritation. Ideal for dry, sensitive, or compromised skin, it delivers long-lasting hydration without feeling heavy or greasy.",
   price: 165,
@@ -245,9 +246,10 @@ const productData = {
   rating: 4.8,
   reviewCount: 823,
   images: [
-    "https://m.media-amazon.com/images/I/61Xx5Z3UeUL._SX679_.jpg",
-    "https://m.media-amazon.com/images/I/71Zf2jJoXxL._SX679_.jpg",
-    "https://m.media-amazon.com/images/I/81oV6d0AALL._SX679_.jpg"
+    "https://m.media-amazon.com/images/I/61--LdAghnL._SX679_.jpg",
+    "https://m.media-amazon.com/images/I/71QaPwRPhUL._SY450_.jpg",
+    "https://m.media-amazon.com/images/I/71IiptGtKnL._SY450_.jpg",
+    "https://m.media-amazon.com/images/I/71dYL1AAo0L._SY450_.jpg"
   ],
   category: "Moisturizers",
   skinType: ["Dry", "Sensitive", "Normal", "Combination"],
@@ -308,7 +310,7 @@ const productData = {
   id: 5,
   name: "Calming Sensitivity Relief Gel",
   brand: "DermaCare",
-  web: "https://amzn.in/d/5nSk4cB",
+  web: "https://amzn.in/d/6n1mSzd",
   shortDescription: "Lightweight gel that soothes redness and calms sensitive skin",
   longDescription: "Soothe and comfort your skin with our Calming Sensitivity Relief Gel. Powered by Centella Asiatica, aloe vera, and licorice root extract, this refreshing gel reduces redness, calms irritation, and strengthens the skin barrier. Its oil-free, fast-absorbing texture makes it perfect for sensitive, reactive, or post-treatment skin.",
   price: 135,
@@ -317,9 +319,10 @@ const productData = {
   rating: 4.7,
   reviewCount: 611,
   images: [
-    "https://m.media-amazon.com/images/I/61iV3ry5gUL._SX679_.jpg",
-    "https://m.media-amazon.com/images/I/71lX-9x2mNL._SX679_.jpg",
-    "https://m.media-amazon.com/images/I/81S9M6i7pWL._SX679_.jpg"
+    "https://m.media-amazon.com/images/I/71lUta4XlmL._SX522_.jpg",
+    "https://m.media-amazon.com/images/I/61yAU7q4oXL._SY355_.jpg",
+    "https://m.media-amazon.com/images/I/715nISlVe3L._SY355_.jpg",
+    "https://m.media-amazon.com/images/I/715nISlVe3L._SY355_.jpg"
   ],
   category: "Moisturizers",
   skinType: ["Sensitive", "Normal", "Combination", "Oily"],
@@ -380,7 +383,7 @@ const productData = {
   id: 6,
   name: "Pore Minimizing Treatment Mask",
   brand: "DermaCare",
-  web: "https://amzn.in/d/4tVm2pQ",
+  web: "https://amzn.in/d/bUekfie",
   shortDescription: "Detoxifying clay mask that reduces the appearance of pores and refines skin texture",
   longDescription: "Unclog and minimize pores with our Pore Minimizing Treatment Mask. Formulated with kaolin clay, niacinamide, and salicylic acid, this purifying mask absorbs excess oil, clears impurities, and smooths skin texture. Enhanced with soothing botanicals, it leaves skin fresh, matte, and refined without over-drying.",
   price: 155,
@@ -389,9 +392,10 @@ const productData = {
   rating: 4.6,
   reviewCount: 732,
   images: [
-    "https://m.media-amazon.com/images/I/61FfuzV7vQL._SX679_.jpg",
-    "https://m.media-amazon.com/images/I/71OQzoT5bCL._SX679_.jpg",
-    "https://m.media-amazon.com/images/I/81nnzj1x6pL._SX679_.jpg"
+    "https://m.media-amazon.com/images/I/51XrwNQQDXL._SX466_.jpg",
+    "https://m.media-amazon.com/images/I/61dhzcMWBgL._SX466_.jpg",
+    "https://m.media-amazon.com/images/I/61gxcf-1UXL._SX466_.jpg",
+    "https://m.media-amazon.com/images/I/51riCItN5LL._SX466_.jpg"
   ],
   category: "Masks",
   skinType: ["Oily", "Combination", "Normal"],
@@ -451,7 +455,7 @@ const productData = {
   id: 7,
   name: "Radiance Boosting Serum",
   brand: "DermaCare",
-  web: "https://amzn.in/d/8kLz9vB",
+  web: "https://amzn.in/d/3NoNdSB",
   shortDescription: "Brightening serum with Vitamin C and antioxidants for glowing skin",
   longDescription: "Achieve a luminous, even-toned complexion with our Radiance Boosting Serum. Packed with stabilized Vitamin C, hyaluronic acid, and botanical extracts, this lightweight serum brightens dull skin, fades dark spots, and defends against environmental stressors. Its fast-absorbing formula delivers hydration and radiance without stickiness, making it perfect for daily use.",
   price: 159,
@@ -460,9 +464,10 @@ const productData = {
   rating: 4.8,
   reviewCount: 1045,
   images: [
-    "https://m.media-amazon.com/images/I/61jRfoJQpWL._SX679_.jpg",
-    "https://m.media-amazon.com/images/I/71VrFqfT2rL._SX679_.jpg",
-    "https://m.media-amazon.com/images/I/81cwz6zXq6L._SX679_.jpg"
+    "https://m.media-amazon.com/images/I/71z3F41wJtL._SX679_.jpg",
+    "https://m.media-amazon.com/images/I/61z22x67huL._SY450_.jpg",
+    "https://m.media-amazon.com/images/I/61Fd7xPkcAL._SY450_.jpg",
+    "https://m.media-amazon.com/images/I/51vAXQPqX2L._SY450_.jpg"
   ],
   category: "Serums",
   skinType: ["Normal", "Dry", "Oily", "Combination"],
@@ -522,7 +527,7 @@ const productData = {
   id: 8,
   name: "Rosacea Soothing Complex",
   brand: "DermaCare",
-  web: "https://amzn.in/d/7rFx3qL",
+  web: "https://amzn.in/d/ap6eoD5",
   shortDescription: "Gentle treatment for redness and irritation associated with rosacea",
   longDescription: "Calm and strengthen sensitive, rosacea-prone skin with our Rosacea Soothing Complex. Infused with niacinamide, allantoin, and licorice root extract, this lightweight formula reduces visible redness, soothes irritation, and fortifies the skin barrier. Ideal for daily use, it helps maintain comfort and skin resilience even in reactive skin.",
   price: 162,
@@ -531,9 +536,10 @@ const productData = {
   rating: 4.7,
   reviewCount: 524,
   images: [
-    "https://m.media-amazon.com/images/I/61bFyX3LxQL._SX679_.jpg",
-    "https://m.media-amazon.com/images/I/71lFv7G8rJL._SX679_.jpg",
-    "https://m.media-amazon.com/images/I/81cGvX7FxML._SX679_.jpg"
+    "https://m.media-amazon.com/images/I/51GNarYWlHL._SX679_.jpg",
+    "https://m.media-amazon.com/images/I/51dBBdRRnsL._SX679_.jpg",
+    "https://m.media-amazon.com/images/I/611lVHgy0EL._SX679_.jpg",
+    "https://m.media-amazon.com/images/I/518S32zXshL._SX679_.jpg"
   ],
   category: "Treatments",
   skinType: ["Sensitive", "Dry", "Combination"],
