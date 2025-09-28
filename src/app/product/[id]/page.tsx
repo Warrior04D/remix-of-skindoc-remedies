@@ -159,271 +159,271 @@ const productData = {
     inStock: true,
     volume: "50ml",
     shelfLife: "18 months"
+  },
+  3: {
+    id: 3,
+    name: "Hyaluronic Acid Hydration Moisturizer",
+    brand: "DermaCare",
+    web: "https://amzn.in/d/4kXy8yM",
+    shortDescription: "Deep hydration with multi-layer Hyaluronic Acid for plump, radiant skin",
+    longDescription: "Experience long-lasting hydration with our Hyaluronic Acid Hydration Moisturizer. Formulated with 3 molecular weights of hyaluronic acid, ceramides, and antioxidants, this lightweight yet nourishing moisturizer replenishes moisture, strengthens the skin barrier, and leaves skin soft, smooth, and glowing all day.",
+    price: 129,
+    originalPrice: 165,
+    discount: 22,
+    rating: 4.8,
+    reviewCount: 1043,
+    images: [
+      "https://m.media-amazon.com/images/I/61B6m9zA1HL._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71kZ4B7fT5L._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/81VqH4hLltL._SX679_.jpg"
+    ],
+    category: "Moisturizers",
+    skinType: ["Normal", "Dry", "Oily", "Combination", "Sensitive"],
+    concerns: ["Dryness", "Dehydration", "Dullness", "Skin barrier"],
+    benefits: [
+      "Hydrates skin up to 72 hours",
+      "Restores skin barrier",
+      "Improves elasticity",
+      "Reduces dryness and tightness",
+      "Leaves skin plump and radiant"
+    ],
+    ingredients: [
+      { name: "Hyaluronic Acid (High MW)", percentage: "0.2%", purpose: "Surface hydration and plumping" },
+      { name: "Hyaluronic Acid (Low MW)", percentage: "0.1%", purpose: "Deep skin hydration" },
+      { name: "Ceramides", percentage: "2%", purpose: "Reinforces skin barrier" },
+      { name: "Vitamin E", percentage: "1%", purpose: "Antioxidant and skin protection" },
+      { name: "Aloe Vera Extract", percentage: "5%", purpose: "Soothes and calms skin" }
+    ],
+    usage: [
+      "Apply morning and evening on cleansed skin",
+      "Use 2-3 pumps for face and neck",
+      "Massage gently until absorbed",
+      "Follow with sunscreen in the morning",
+      "Can be layered under makeup"
+    ],
+    beforeAfter: [
+      { before: "/api/placeholder/300/400", after: "/api/placeholder/300/400", timeframe: "4 weeks" },
+      { before: "/api/placeholder/300/400", after: "/api/placeholder/300/400", timeframe: "8 weeks" }
+    ],
+    reviews: [
+      {
+        id: 1,
+        user: "Neha R.",
+        rating: 5,
+        date: "2024-02-18",
+        title: "Best hydration boost!",
+        comment: "My skin feels soft, plump, and hydrated all day without feeling greasy. Perfect for Indian weather.",
+        verified: true,
+        helpful: 21
+      },
+      {
+        id: 2,
+        user: "James L.",
+        rating: 4,
+        date: "2024-03-05",
+        title: "Great lightweight moisturizer",
+        comment: "Absorbs quickly, works well under sunscreen. Just wish it came in a bigger bottle.",
+        verified: true,
+        helpful: 12
+      }
+    ],
+    inStock: true,
+    volume: "50ml",
+    shelfLife: "24 months"
+  },
+  4: {
+    id: 4,
+    name: "Gentle Cleansing Oil",
+    brand: "DermaCare",
+    web: "https://amzn.in/d/7kVt2pO",
+    shortDescription: "Lightweight oil cleanser that melts away makeup and impurities",
+    longDescription: "Our Gentle Cleansing Oil effortlessly dissolves makeup, sunscreen, and impurities without stripping the skin's natural moisture. Infused with nourishing botanical oils and Vitamin E, it transforms into a milky emulsion upon contact with water, leaving your skin clean, soft, and refreshed.",
+    price: 145,
+    originalPrice: 180,
+    discount: 19,
+    rating: 4.7,
+    reviewCount: 768,
+    images: [
+      "https://m.media-amazon.com/images/I/61oIabM6jWL._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71VTFVzXrKL._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/81pG2Zf1pQL._SX679_.jpg"
+    ],
+    category: "Cleansers",
+    skinType: ["Normal", "Dry", "Oily", "Combination", "Sensitive"],
+    concerns: ["Makeup removal", "Clogged pores", "Dryness", "Dullness"],
+    benefits: [
+      "Removes waterproof makeup and sunscreen",
+      "Maintains skin's natural moisture",
+      "Prevents clogged pores",
+      "Soothes and nourishes skin",
+      "Leaves skin soft and refreshed"
+    ],
+    ingredients: [
+      { name: "Sunflower Seed Oil", percentage: "40%", purpose: "Gentle cleansing and nourishing" },
+      { name: "Jojoba Oil", percentage: "15%", purpose: "Balances sebum and prevents dryness" },
+      { name: "Sweet Almond Oil", percentage: "20%", purpose: "Softens and conditions skin" },
+      { name: "Vitamin E", percentage: "1%", purpose: "Antioxidant protection" },
+      { name: "Chamomile Extract", percentage: "2%", purpose: "Soothing and calming effect" }
+    ],
+    usage: [
+      "Apply 2-3 pumps to dry face and massage gently",
+      "Focus on areas with heavy makeup or sunscreen",
+      "Add a small amount of water to emulsify into a milky texture",
+      "Rinse thoroughly with lukewarm water",
+      "Follow with a water-based cleanser for double cleansing"
+    ],
+    beforeAfter: [
+      { before: "/api/placeholder/300/400", after: "/api/placeholder/300/400", timeframe: "2 weeks" },
+      { before: "/api/placeholder/300/400", after: "/api/placeholder/300/400", timeframe: "6 weeks" }
+    ],
+    reviews: [
+      {
+        id: 1,
+        user: "Sofia M.",
+        rating: 5,
+        date: "2024-04-10",
+        title: "Perfect first cleanser",
+        comment: "Melts off all my makeup, even waterproof mascara, without leaving a greasy residue. Love it!",
+        verified: true,
+        helpful: 18
+      },
+      {
+        id: 2,
+        user: "Ravi S.",
+        rating: 4,
+        date: "2024-04-22",
+        title: "Gentle and effective",
+        comment: "Works great for my oily skin. Doesn't break me out and leaves my skin fresh.",
+        verified: true,
+        helpful: 9
+      }
+    ],
+    inStock: true,
+    volume: "150ml",
+    shelfLife: "18 months"
+  },
+  5: {
+    id: 5,
+    name: "SPF 50 Mineral Sunscreen",
+    brand: "DermaCare",
+    web: "https://amzn.in/d/9kTz5sP",
+    shortDescription: "Broad-spectrum mineral sunscreen with SPF 50 for daily protection",
+    longDescription: "Protect your skin from harmful UVA and UVB rays with our lightweight SPF 50 Mineral Sunscreen. Formulated with 100% mineral filters—zinc oxide and titanium dioxide—this non-greasy sunscreen provides broad-spectrum protection while soothing and nourishing the skin. Ideal for sensitive skin, it blends easily without leaving a heavy white cast.",
+    price: 175,
+    originalPrice: 220,
+    discount: 20,
+    rating: 4.6,
+    reviewCount: 1152,
+    images: [
+      "https://m.media-amazon.com/images/I/61nQK3yT8kL._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71wH1CBlXPL._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/81uQxjAwLXL._SX679_.jpg"
+    ],
+    category: "Sunscreens",
+    skinType: ["Normal", "Oily", "Dry", "Combination", "Sensitive"],
+    concerns: ["Sun protection", "Premature aging", "Dark spots", "Sensitivity"],
+    benefits: [
+      "Broad-spectrum UVA/UVB protection",
+      "SPF 50 PA+++ rating",
+      "Non-comedogenic and fragrance-free",
+      "Lightweight and fast-absorbing",
+      "Soothes and protects sensitive skin"
+    ],
+    ingredients: [
+      { name: "Zinc Oxide", percentage: "20%", purpose: "Broad-spectrum UV protection" },
+      { name: "Titanium Dioxide", percentage: "5%", purpose: "UV filter and sun protection" },
+      { name: "Niacinamide", percentage: "2%", purpose: "Brightens skin and improves barrier" },
+      { name: "Vitamin E", percentage: "1%", purpose: "Antioxidant and skin repair" },
+      { name: "Green Tea Extract", percentage: "2%", purpose: "Soothes and fights free radicals" }
+    ],
+    usage: [
+      "Apply generously 15 minutes before sun exposure",
+      "Use as the last step in your morning routine",
+      "Reapply every 2 hours when outdoors",
+      "Reapply immediately after swimming or sweating",
+      "Safe for daily use under makeup"
+    ],
+    beforeAfter: [
+      { before: "/api/placeholder/300/400", after: "/api/placeholder/300/400", timeframe: "4 weeks" },
+      { before: "/api/placeholder/300/400", after: "/api/placeholder/300/400", timeframe: "12 weeks" }
+    ],
+    reviews: [
+      {
+        id: 1,
+        user: "Aditi V.",
+        rating: 5,
+        date: "2024-05-03",
+        title: "Finally a mineral sunscreen I love!",
+        comment: "Doesn't clog pores, blends well, and gives me a healthy glow without irritation.",
+        verified: true,
+        helpful: 27
+      },
+      {
+        id: 2,
+        user: "Mark T.",
+        rating: 4,
+        date: "2024-05-19",
+        title: "Great for sensitive skin",
+        comment: "No stinging around my eyes like chemical sunscreens. A slight white cast, but it fades quickly.",
+        verified: true,
+        helpful: 14
+      }
+    ],
+    inStock: true,
+    volume: "50ml",
+    shelfLife: "24 months"
+  },
+  6: {
+    id: 6,
+    name: "Peptide Eye Cream",
+    brand: "DermaCare",
+    web: "https://amzn.in/d/3pXy7eQ",
+    shortDescription: "Targeted eye cream with peptides to reduce fine lines and puffiness",
+    longDescription: "Revitalize your under-eye area with our Peptide Eye Cream. Formulated with a powerful blend of peptides, caffeine, hyaluronic acid, and botanical extracts, this lightweight cream helps smooth fine lines, reduce puffiness, and brighten dark circles. Gentle enough for daily use, it absorbs quickly to leave your eyes refreshed and youthful-looking.",
+    price: 139,
+    originalPrice: 175,
+    discount: 21,
+    rating: 4.7,
+    reviewCount: 689,
+    images: [
+      "https://m.media-amazon.com/images/I/61tXrBrA0sL._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/71AqY6xYFCL._SX679_.jpg",
+      "https://m.media-amazon.com/images/I/81wRbbUdfuL._SX679_.jpg"
+    ],
+    category: "Eye Care",
+    skinType: ["Normal", "Dry", "Oily", "Combination", "Sensitive"],
+    concerns: ["Dark circles", "Fine lines", "Puffiness", "Dehydration"],
+    benefits: [
+      "Reduces appearance of fine lines and wrinkles",
+      "Brightens dark circles",
+      "De-puffs under-eye area",
+      "Deeply hydrates delicate skin",
+      "Supports collagen production"
+    ],
+    ingredients: [
+      { name: "Peptide Complex", percentage: "3%", purpose: "Stimulates collagen and firms skin" },
+      { name: "Caffeine", percentage: "2%", purpose: "Reduces puffiness and brightens" },
+      { name: "Hyaluronic Acid", percentage: "1%", purpose: "Hydrates and plumps skin" },
+      { name: "Niacinamide", percentage: "2%", purpose: "Brightens dark circles and improves texture" },
+      { name: "Chamomile Extract", percentage: "1%", purpose: "Soothes sensitive skin" }
+    ],
+    usage: [
+      "Apply a small amount to under-eye area morning and night",
+      "Use ring finger to gently tap into skin",
+      "Avoid direct contact with eyes",
+      "Can be worn under makeup",
+      "For best results, use consistently for 6–8 weeks"
+    ],
+    beforeAfter: [
+      { before: "/api/placeholder/300/400", after: "/api/placeholder/300/400", timeframe: "4 weeks" },
+      { before: "/api/placeholder/300/400", after: "/api/placeholder/300/400", timeframe: "10 weeks" }
+    ],
+    reviews: [],
+    inStock: true,
+    volume: "30ml",
+    shelfLife: "18 months"
   }
-  3:
-    {
-  id: 3,
-  name: "Hyaluronic Acid Hydration Moisturizer",
-  brand: "DermaCare",
-  web: "https://amzn.in/d/4kXy8yM",
-  shortDescription: "Deep hydration with multi-layer Hyaluronic Acid for plump, radiant skin",
-  longDescription: "Experience long-lasting hydration with our Hyaluronic Acid Hydration Moisturizer. Formulated with 3 molecular weights of hyaluronic acid, ceramides, and antioxidants, this lightweight yet nourishing moisturizer replenishes moisture, strengthens the skin barrier, and leaves skin soft, smooth, and glowing all day.",
-  price: 129,
-  originalPrice: 165,
-  discount: 22,
-  rating: 4.8,
-  reviewCount: 1043,
-  images: [
-    "https://m.media-amazon.com/images/I/61B6m9zA1HL._SX679_.jpg",
-    "https://m.media-amazon.com/images/I/71kZ4B7fT5L._SX679_.jpg",
-    "https://m.media-amazon.com/images/I/81VqH4hLltL._SX679_.jpg"
-  ],
-  category: "Moisturizers",
-  skinType: ["Normal", "Dry", "Oily", "Combination", "Sensitive"],
-  concerns: ["Dryness", "Dehydration", "Dullness", "Skin barrier"],
-  benefits: [
-    "Hydrates skin up to 72 hours",
-    "Restores skin barrier",
-    "Improves elasticity",
-    "Reduces dryness and tightness",
-    "Leaves skin plump and radiant"
-  ],
-  ingredients: [
-    { name: "Hyaluronic Acid (High MW)", percentage: "0.2%", purpose: "Surface hydration and plumping" },
-    { name: "Hyaluronic Acid (Low MW)", percentage: "0.1%", purpose: "Deep skin hydration" },
-    { name: "Ceramides", percentage: "2%", purpose: "Reinforces skin barrier" },
-    { name: "Vitamin E", percentage: "1%", purpose: "Antioxidant and skin protection" },
-    { name: "Aloe Vera Extract", percentage: "5%", purpose: "Soothes and calms skin" }
-  ],
-  usage: [
-    "Apply morning and evening on cleansed skin",
-    "Use 2-3 pumps for face and neck",
-    "Massage gently until absorbed",
-    "Follow with sunscreen in the morning",
-    "Can be layered under makeup"
-  ],
-  beforeAfter: [
-    { before: "/api/placeholder/300/400", after: "/api/placeholder/300/400", timeframe: "4 weeks" },
-    { before: "/api/placeholder/300/400", after: "/api/placeholder/300/400", timeframe: "8 weeks" }
-  ],
-  reviews: [
-    {
-      id: 1,
-      user: "Neha R.",
-      rating: 5,
-      date: "2024-02-18",
-      title: "Best hydration boost!",
-      comment: "My skin feels soft, plump, and hydrated all day without feeling greasy. Perfect for Indian weather.",
-      verified: true,
-      helpful: 21
-    },
-    {
-      id: 2,
-      user: "James L.",
-      rating: 4,
-      date: "2024-03-05",
-      title: "Great lightweight moisturizer",
-      comment: "Absorbs quickly, works well under sunscreen. Just wish it came in a bigger bottle.",
-      verified: true,
-      helpful: 12
-    }
-  ],
-  inStock: true,
-  volume: "50ml",
-  shelfLife: "24 months"
-}
-4: {
-  id: 4,
-  name: "Gentle Cleansing Oil",
-  brand: "DermaCare",
-  web: "https://amzn.in/d/7kVt2pO",
-  shortDescription: "Lightweight oil cleanser that melts away makeup and impurities",
-  longDescription: "Our Gentle Cleansing Oil effortlessly dissolves makeup, sunscreen, and impurities without stripping the skin’s natural moisture. Infused with nourishing botanical oils and Vitamin E, it transforms into a milky emulsion upon contact with water, leaving your skin clean, soft, and refreshed.",
-  price: 145,
-  originalPrice: 180,
-  discount: 19,
-  rating: 4.7,
-  reviewCount: 768,
-  images: [
-    "https://m.media-amazon.com/images/I/61oIabM6jWL._SX679_.jpg",
-    "https://m.media-amazon.com/images/I/71VTFVzXrKL._SX679_.jpg",
-    "https://m.media-amazon.com/images/I/81pG2Zf1pQL._SX679_.jpg"
-  ],
-  category: "Cleansers",
-  skinType: ["Normal", "Dry", "Oily", "Combination", "Sensitive"],
-  concerns: ["Makeup removal", "Clogged pores", "Dryness", "Dullness"],
-  benefits: [
-    "Removes waterproof makeup and sunscreen",
-    "Maintains skin’s natural moisture",
-    "Prevents clogged pores",
-    "Soothes and nourishes skin",
-    "Leaves skin soft and refreshed"
-  ],
-  ingredients: [
-    { name: "Sunflower Seed Oil", percentage: "40%", purpose: "Gentle cleansing and nourishing" },
-    { name: "Jojoba Oil", percentage: "15%", purpose: "Balances sebum and prevents dryness" },
-    { name: "Sweet Almond Oil", percentage: "20%", purpose: "Softens and conditions skin" },
-    { name: "Vitamin E", percentage: "1%", purpose: "Antioxidant protection" },
-    { name: "Chamomile Extract", percentage: "2%", purpose: "Soothing and calming effect" }
-  ],
-  usage: [
-    "Apply 2-3 pumps to dry face and massage gently",
-    "Focus on areas with heavy makeup or sunscreen",
-    "Add a small amount of water to emulsify into a milky texture",
-    "Rinse thoroughly with lukewarm water",
-    "Follow with a water-based cleanser for double cleansing"
-  ],
-  beforeAfter: [
-    { before: "/api/placeholder/300/400", after: "/api/placeholder/300/400", timeframe: "2 weeks" },
-    { before: "/api/placeholder/300/400", after: "/api/placeholder/300/400", timeframe: "6 weeks" }
-  ],
-  reviews: [
-    {
-      id: 1,
-      user: "Sofia M.",
-      rating: 5,
-      date: "2024-04-10",
-      title: "Perfect first cleanser",
-      comment: "Melts off all my makeup, even waterproof mascara, without leaving a greasy residue. Love it!",
-      verified: true,
-      helpful: 18
-    },
-    {
-      id: 2,
-      user: "Ravi S.",
-      rating: 4,
-      date: "2024-04-22",
-      title: "Gentle and effective",
-      comment: "Works great for my oily skin. Doesn’t break me out and leaves my skin fresh.",
-      verified: true,
-      helpful: 9
-    }
-  ],
-  inStock: true,
-  volume: "150ml",
-  shelfLife: "18 months"
-}
-
-5: {
-  id: 5,
-  name: "SPF 50 Mineral Sunscreen",
-  brand: "DermaCare",
-  web: "https://amzn.in/d/9kTz5sP",
-  shortDescription: "Broad-spectrum mineral sunscreen with SPF 50 for daily protection",
-  longDescription: "Protect your skin from harmful UVA and UVB rays with our lightweight SPF 50 Mineral Sunscreen. Formulated with 100% mineral filters—zinc oxide and titanium dioxide—this non-greasy sunscreen provides broad-spectrum protection while soothing and nourishing the skin. Ideal for sensitive skin, it blends easily without leaving a heavy white cast.",
-  price: 175,
-  originalPrice: 220,
-  discount: 20,
-  rating: 4.6,
-  reviewCount: 1152,
-  images: [
-    "https://m.media-amazon.com/images/I/61nQK3yT8kL._SX679_.jpg",
-    "https://m.media-amazon.com/images/I/71wH1CBlXPL._SX679_.jpg",
-    "https://m.media-amazon.com/images/I/81uQxjAwLXL._SX679_.jpg"
-  ],
-  category: "Sunscreens",
-  skinType: ["Normal", "Oily", "Dry", "Combination", "Sensitive"],
-  concerns: ["Sun protection", "Premature aging", "Dark spots", "Sensitivity"],
-  benefits: [
-    "Broad-spectrum UVA/UVB protection",
-    "SPF 50 PA+++ rating",
-    "Non-comedogenic and fragrance-free",
-    "Lightweight and fast-absorbing",
-    "Soothes and protects sensitive skin"
-  ],
-  ingredients: [
-    { name: "Zinc Oxide", percentage: "20%", purpose: "Broad-spectrum UV protection" },
-    { name: "Titanium Dioxide", percentage: "5%", purpose: "UV filter and sun protection" },
-    { name: "Niacinamide", percentage: "2%", purpose: "Brightens skin and improves barrier" },
-    { name: "Vitamin E", percentage: "1%", purpose: "Antioxidant and skin repair" },
-    { name: "Green Tea Extract", percentage: "2%", purpose: "Soothes and fights free radicals" }
-  ],
-  usage: [
-    "Apply generously 15 minutes before sun exposure",
-    "Use as the last step in your morning routine",
-    "Reapply every 2 hours when outdoors",
-    "Reapply immediately after swimming or sweating",
-    "Safe for daily use under makeup"
-  ],
-  beforeAfter: [
-    { before: "/api/placeholder/300/400", after: "/api/placeholder/300/400", timeframe: "4 weeks" },
-    { before: "/api/placeholder/300/400", after: "/api/placeholder/300/400", timeframe: "12 weeks" }
-  ],
-  reviews: [
-    {
-      id: 1,
-      user: "Aditi V.",
-      rating: 5,
-      date: "2024-05-03",
-      title: "Finally a mineral sunscreen I love!",
-      comment: "Doesn’t clog pores, blends well, and gives me a healthy glow without irritation.",
-      verified: true,
-      helpful: 27
-    },
-    {
-      id: 2,
-      user: "Mark T.",
-      rating: 4,
-      date: "2024-05-19",
-      title: "Great for sensitive skin",
-      comment: "No stinging around my eyes like chemical sunscreens. A slight white cast, but it fades quickly.",
-      verified: true,
-      helpful: 14
-    }
-  ],
-  inStock: true,
-  volume: "50ml",
-  shelfLife: "24 months"
-}
-6: {
-  id: 5,
-  name: "Peptide Eye Cream",
-  brand: "DermaCare",
-  web: "https://amzn.in/d/3pXy7eQ",
-  shortDescription: "Targeted eye cream with peptides to reduce fine lines and puffiness",
-  longDescription: "Revitalize your under-eye area with our Peptide Eye Cream. Formulated with a powerful blend of peptides, caffeine, hyaluronic acid, and botanical extracts, this lightweight cream helps smooth fine lines, reduce puffiness, and brighten dark circles. Gentle enough for daily use, it absorbs quickly to leave your eyes refreshed and youthful-looking.",
-  price: 139,
-  originalPrice: 175,
-  discount: 21,
-  rating: 4.7,
-  reviewCount: 689,
-  images: [
-    "https://m.media-amazon.com/images/I/61tXrBrA0sL._SX679_.jpg",
-    "https://m.media-amazon.com/images/I/71AqY6xYFCL._SX679_.jpg",
-    "https://m.media-amazon.com/images/I/81wRbbUdfuL._SX679_.jpg"
-  ],
-  category: "Eye Care",
-  skinType: ["Normal", "Dry", "Oily", "Combination", "Sensitive"],
-  concerns: ["Dark circles", "Fine lines", "Puffiness", "Dehydration"],
-  benefits: [
-    "Reduces appearance of fine lines and wrinkles",
-    "Brightens dark circles",
-    "De-puffs under-eye area",
-    "Deeply hydrates delicate skin",
-    "Supports collagen production"
-  ],
-  ingredients: [
-    { name: "Peptide Complex", percentage: "3%", purpose: "Stimulates collagen and firms skin" },
-    { name: "Caffeine", percentage: "2%", purpose: "Reduces puffiness and brightens" },
-    { name: "Hyaluronic Acid", percentage: "1%", purpose: "Hydrates and plumps skin" },
-    { name: "Niacinamide", percentage: "2%", purpose: "Brightens dark circles and improves texture" },
-    { name: "Chamomile Extract", percentage: "1%", purpose: "Soothes sensitive skin" }
-  ],
-  usage: [
-    "Apply a small amount to under-eye area morning and night",
-    "Use ring finger to gently tap into skin",
-    "Avoid direct contact with eyes",
-    "Can be worn under makeup",
-    "For best results, use consistently for 6–8 weeks"
-  ],
-  beforeAfter: [
-    { before: "/api/placeholder/300/400", after: "/api/placeholder/300/400", timeframe: "4 weeks" },
-    { before: "/api/placeholder/300/400", after: "/api/placeholder/300/400", timeframe: "10 weeks" }
-  ],
-  review
-
-}
-;
+};
 
 // Related products data
 const relatedProducts = [
