@@ -6,6 +6,9 @@ import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Eye, EyeOff, Mail, Lock, ArrowRight } from "lucide-react";
+import { authClient } from "@/lib/auth-client";
+import { useRouter } from "next/navigation";
+import { toast } from "sonner";
 
 interface LoginFormData {
   email: string;
@@ -17,8 +20,10 @@ export default function LoginPage() {
     email: "",
     password: ""
   });
+  const [rememberMe, setRememberMe] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const router = useRouter();
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -31,10 +36,26 @@ export default function LoginPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
-    // Simulate login process
-    setTimeout(() => {
+    try {
+      const { error } = await authClient.signIn.email({
+        email: formData.email,
+        password: formData.password,
+        rememberMe,
+        callbackURL: "/analysis"
+      });
+
+      if (error?.code) {
+        toast.error("Invalid email or password. Please make sure you have already registered an account and try again.");
+        setIsLoading(false);
+        return;
+      }
+
+      toast.success("Signed in successfully");
+      router.push("/analysis");
+    } catch (err) {
+      toast.error("Login failed. Please try again.");
       setIsLoading(false);
-    }, 2000);
+    }
   };
 
   const handleSocialLogin = (provider: string) => {
@@ -99,6 +120,7 @@ export default function LoginPage() {
                     type={showPassword ? "text" : "password"}
                     name="password"
                     placeholder="Enter your password"
+                    autoComplete="off"
                     value={formData.password}
                     onChange={handleInputChange}
                     className="pl-10 pr-10 bg-white/10 border-white/20 text-white placeholder:text-white/60 focus:border-accent focus:ring-accent/50 h-12"
@@ -120,12 +142,14 @@ export default function LoginPage() {
 
               <div className="flex items-center justify-between text-sm">
                 <label className="flex items-center space-x-2 text-white/80 cursor-pointer">
-                  <input type="checkbox" className="rounded border-white/20 bg-white/10 text-accent focus:ring-accent/50" />
+                  <input
+                    type="checkbox"
+                    className="rounded border-white/20 bg-white/10 text-accent focus:ring-accent/50"
+                    checked={rememberMe}
+                    onChange={(e) => setRememberMe(e.target.checked)}
+                  />
                   <span>Remember me</span>
                 </label>
-                <a href="#" className="text-accent hover:text-accent/80 transition-colors">
-                  Forgot password?
-                </a>
               </div>
 
               <Button

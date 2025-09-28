@@ -9,6 +9,9 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Eye, EyeOff, User, Mail, Lock, Shield, ArrowRight, Sparkles } from "lucide-react";
 import Link from "next/link";
+import { authClient } from "@/lib/auth-client";
+import { useRouter } from "next/navigation";
+import { toast } from "sonner";
 
 interface SignupFormData {
   firstName: string;
@@ -35,6 +38,7 @@ export default function SignupPage() {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const router = useRouter();
 
   const handleInputChange = (field: keyof SignupFormData, value: string | boolean) => {
     setFormData(prev => ({ ...prev, [field]: value }));
@@ -42,13 +46,35 @@ export default function SignupPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!formData.acceptTerms) {
+      toast.error("Please accept the terms to continue.");
+      return;
+    }
+    if (formData.password !== formData.confirmPassword) {
+      toast.error("Passwords do not match.");
+      return;
+    }
     setIsLoading(true);
-    
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    setIsLoading(false);
-    console.log("Signup data:", formData);
+    try {
+      const { error } = await authClient.signUp.email({
+        email: formData.email,
+        name: `${formData.firstName} ${formData.lastName}`.trim(),
+        password: formData.password,
+      });
+
+      if (error?.code) {
+        const map: Record<string, string> = { USER_ALREADY_EXISTS: "Email already registered" };
+        toast.error(map[error.code] || "Registration failed");
+        setIsLoading(false);
+        return;
+      }
+
+      toast.success("Account created! Please check your email to verify.");
+      router.push("/login?registered=true");
+    } catch {
+      toast.error("Registration failed. Please try again.");
+      setIsLoading(false);
+    }
   };
 
   const handleSocialSignup = (provider: string) => {
@@ -223,6 +249,7 @@ export default function SignupPage() {
                     id="password"
                     type={showPassword ? "text" : "password"}
                     placeholder="Create a strong password"
+                    autoComplete="off"
                     value={formData.password}
                     onChange={(e) => handleInputChange('password', e.target.value)}
                     className="h-11 pl-10 pr-10 border-border focus:border-accent focus:ring-accent/20 transition-all duration-300"
@@ -251,6 +278,7 @@ export default function SignupPage() {
                     id="confirmPassword"
                     type={showConfirmPassword ? "text" : "password"}
                     placeholder="Confirm your password"
+                    autoComplete="off"
                     value={formData.confirmPassword}
                     onChange={(e) => handleInputChange('confirmPassword', e.target.value)}
                     className="h-11 pl-10 pr-10 border-border focus:border-accent focus:ring-accent/20 transition-all duration-300"
