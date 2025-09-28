@@ -14,6 +14,7 @@ import { Badge } from '@/components/ui/badge';
 import { Progress } from '@/components/ui/progress';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { toast } from 'sonner';
+import { FloatingNavbar } from '@/components/navbars/floating-navbar';
 
 interface AssessmentData {
   skinType: string;
@@ -198,6 +199,7 @@ export default function SkinAnalysisPage() {
   if (showResults) {
     return (
       <div className="min-h-screen bg-background">
+        <FloatingNavbar />
         {/* Results Header */}
         <div className="bg-gradient-to-r from-primary to-secondary border-b">
           <div className="container max-w-6xl mx-auto py-12">
@@ -330,6 +332,7 @@ export default function SkinAnalysisPage() {
 
   return (
     <div className="min-h-screen bg-background">
+      <FloatingNavbar />
       {/* Hero Section */}
       <div className="bg-gradient-to-br from-primary via-secondary to-primary/50">
         <div className="container max-w-6xl mx-auto py-16">
