@@ -368,7 +368,7 @@ export default function ProductDetailPage() {
                 >
                   <ShoppingCart className="h-5 w-5 mr-2" />
                   <Link
-                    href="/products"
+                    href="https://www.amazon.in/s?k=skin+care+products&crid=4NTD3DIXRXR&sprefix=skin+care+%2Caps%2C624&ref=nb_sb_ss_mvt-t11-ranker_1_10"
                     className="inline-flex items-center rounded-md bg-accent px-4 py-2 text-white hover:opacity-90"
                     >
                     Add to Cart - ${(product.price * quantity).toFixed(2)}
