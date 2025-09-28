@@ -129,7 +129,14 @@ export default function ProductsPage() {
                 
                 <div className="p-6">
                   <h3 className="font-display text-xl font-semibold text-foreground mb-2 group-hover:text-accent transition-colors duration-200">
+                    <a
+                    href="https://www.amazon.in/s?k=Face+care&crid=220GL9FQYS8X&sprefix=face+care%2Caps%2C351&ref=nb_sb_noss_1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-accent hover:underline"
+                    >
                     {category.name}
+                    </a>                    
                   </h3>
                   <p className="text-muted-foreground text-sm leading-relaxed">
                     {category.description}
