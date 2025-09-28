@@ -30,7 +30,7 @@ const productData = {
     rating: 4.8,
     reviewCount: 1247,
     images: [
-      "/api/placeholder/600/600",
+      "https://m.media-amazon.com/images/I/61oqGjcGGQL._SX679_.jpg/600/600",
       "/api/placeholder/600/600",
       "/api/placeholder/600/600",
       "/api/placeholder/600/600"
