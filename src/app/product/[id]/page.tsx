@@ -21,7 +21,7 @@ const productData = {
     id: 1,
     name: "Vitamin C Brightening Serum",
     brand: "LuxeDerm",
-    web: "https://amzn.in/d/iR5p0Nn"
+    web: "https://amzn.in/d/iR5p0Nn",
     shortDescription: "Advanced vitamin C serum for radiant, glowing skin",
     longDescription: "Our clinically-proven Vitamin C Brightening Serum combines 20% L-Ascorbic Acid with stabilized vitamin E and ferulic acid to deliver maximum antioxidant protection and brightening benefits. This powerful formula targets dark spots, uneven skin tone, and dullness while promoting collagen synthesis for firmer, more youthful-looking skin.",
     price: 89,
