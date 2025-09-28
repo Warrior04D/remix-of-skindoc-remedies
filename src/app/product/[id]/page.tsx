@@ -17,7 +17,7 @@ import { toast } from "sonner";
 
 // Mock product data
 const productData = {
-  1: {
+  2: {
     id: 2,
     name: "Vitamin C Brightening Serum",
     brand: "Himalaya",
@@ -100,7 +100,7 @@ const productData = {
     volume: "30ml",
     shelfLife: "12 months"
   },
-  2: {
+  1: {
     id: 1,
     name: "Retinol Renewal Night Treatment",
     brand: "DermaCare",
