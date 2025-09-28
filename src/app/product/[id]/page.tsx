@@ -519,7 +519,7 @@ const productData = {
   shelfLife: "18 months"
 },
 8: {
-  id: 11,
+  id: 8,
   name: "Rosacea Soothing Complex",
   brand: "DermaCare",
   web: "https://amzn.in/d/7rFx3qL",
