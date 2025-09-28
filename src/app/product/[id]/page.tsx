@@ -17,8 +17,8 @@ import { toast } from "sonner";
 
 // Mock product data
 const productData = {
-  2: {
-    id: 2,
+  3: {
+    id: 3,
     name: "Vitamin C Brightening Serum",
     brand: "Himalaya",
     web: "https://amzn.in/d/iR5p0Nn",
@@ -160,269 +160,436 @@ const productData = {
     volume: "50ml",
     shelfLife: "18 months"
   },
-  3: {
-    id: 3,
-    name: "Hyaluronic Acid Hydration Moisturizer",
-    brand: "DermaCare",
-    web: "https://amzn.in/d/4kXy8yM",
-    shortDescription: "Deep hydration with multi-layer Hyaluronic Acid for plump, radiant skin",
-    longDescription: "Experience long-lasting hydration with our Hyaluronic Acid Hydration Moisturizer. Formulated with 3 molecular weights of hyaluronic acid, ceramides, and antioxidants, this lightweight yet nourishing moisturizer replenishes moisture, strengthens the skin barrier, and leaves skin soft, smooth, and glowing all day.",
-    price: 129,
-    originalPrice: 165,
-    discount: 22,
-    rating: 4.8,
-    reviewCount: 1043,
-    images: [
-      "https://m.media-amazon.com/images/I/61B6m9zA1HL._SX679_.jpg",
-      "https://m.media-amazon.com/images/I/71kZ4B7fT5L._SX679_.jpg",
-      "https://m.media-amazon.com/images/I/81VqH4hLltL._SX679_.jpg"
-    ],
-    category: "Moisturizers",
-    skinType: ["Normal", "Dry", "Oily", "Combination", "Sensitive"],
-    concerns: ["Dryness", "Dehydration", "Dullness", "Skin barrier"],
-    benefits: [
-      "Hydrates skin up to 72 hours",
-      "Restores skin barrier",
-      "Improves elasticity",
-      "Reduces dryness and tightness",
-      "Leaves skin plump and radiant"
-    ],
-    ingredients: [
-      { name: "Hyaluronic Acid (High MW)", percentage: "0.2%", purpose: "Surface hydration and plumping" },
-      { name: "Hyaluronic Acid (Low MW)", percentage: "0.1%", purpose: "Deep skin hydration" },
-      { name: "Ceramides", percentage: "2%", purpose: "Reinforces skin barrier" },
-      { name: "Vitamin E", percentage: "1%", purpose: "Antioxidant and skin protection" },
-      { name: "Aloe Vera Extract", percentage: "5%", purpose: "Soothes and calms skin" }
-    ],
-    usage: [
-      "Apply morning and evening on cleansed skin",
-      "Use 2-3 pumps for face and neck",
-      "Massage gently until absorbed",
-      "Follow with sunscreen in the morning",
-      "Can be layered under makeup"
-    ],
-    beforeAfter: [
-      { before: "/api/placeholder/300/400", after: "/api/placeholder/300/400", timeframe: "4 weeks" },
-      { before: "/api/placeholder/300/400", after: "/api/placeholder/300/400", timeframe: "8 weeks" }
-    ],
-    reviews: [
-      {
-        id: 1,
-        user: "Neha R.",
-        rating: 5,
-        date: "2024-02-18",
-        title: "Best hydration boost!",
-        comment: "My skin feels soft, plump, and hydrated all day without feeling greasy. Perfect for Indian weather.",
-        verified: true,
-        helpful: 21
-      },
-      {
-        id: 2,
-        user: "James L.",
-        rating: 4,
-        date: "2024-03-05",
-        title: "Great lightweight moisturizer",
-        comment: "Absorbs quickly, works well under sunscreen. Just wish it came in a bigger bottle.",
-        verified: true,
-        helpful: 12
-      }
-    ],
-    inStock: true,
-    volume: "50ml",
-    shelfLife: "24 months"
-  },
+  2: {
+  id:2,
+  name: "Gentle Acne Clearing Complex",
+  brand: "DermaCare",
+  web: "https://amzn.in/d/6xVf3kL",
+  shortDescription: "Lightweight treatment for acne-prone skin with salicylic acid and soothing botanicals",
+  longDescription: "Fight breakouts without irritation using our Gentle Acne Clearing Complex. Formulated with 2% salicylic acid, niacinamide, and soothing green tea extract, this treatment clears clogged pores, reduces acne, and controls excess oil while keeping skin balanced and calm. Suitable for daily use on sensitive and acne-prone skin.",
+  price: 149,
+  originalPrice: 190,
+  discount: 22,
+  rating: 4.6,
+  reviewCount: 954,
+  images: [
+    "https://m.media-amazon.com/images/I/61TfV8x7uCL._SX679_.jpg",
+    "https://m.media-amazon.com/images/I/71NbOeQnQdL._SX679_.jpg",
+    "https://m.media-amazon.com/images/I/81vssHnLxVL._SX679_.jpg"
+  ],
+  category: "Treatments",
+  skinType: ["Oily", "Combination", "Acne-prone", "Sensitive"],
+  concerns: ["Acne", "Clogged pores", "Excess oil", "Redness"],
+  benefits: [
+    "Clears acne and prevents breakouts",
+    "Unclogs and minimizes pores",
+    "Controls excess sebum",
+    "Reduces redness and irritation",
+    "Balances and soothes skin"
+  ],
+  ingredients: [
+    { name: "Salicylic Acid", percentage: "2%", purpose: "Exfoliates inside pores to treat and prevent acne" },
+    { name: "Niacinamide", percentage: "4%", purpose: "Reduces inflammation and brightens skin" },
+    { name: "Zinc PCA", percentage: "1%", purpose: "Controls oil production and supports healing" },
+    { name: "Green Tea Extract", percentage: "2%", purpose: "Soothes irritation and provides antioxidants" },
+    { name: "Aloe Vera", percentage: "5%", purpose: "Hydrates and calms sensitive skin" }
+  ],
+  usage: [
+    "Apply a thin layer to cleansed skin once daily",
+    "Increase to twice daily if tolerated",
+    "Use as a spot treatment or all-over serum",
+    "Follow with moisturizer",
+    "Always wear SPF during the day"
+  ],
+  beforeAfter: [
+    { before: "/api/placeholder/300/400", after: "/api/placeholder/300/400", timeframe: "3 weeks" },
+    { before: "/api/placeholder/300/400", after: "/api/placeholder/300/400", timeframe: "8 weeks" }
+  ],
+  reviews: [
+    {
+      id: 1,
+      user: "Priya K.",
+      rating: 5,
+      date: "2024-07-08",
+      title: "Cleared my breakouts fast!",
+      comment: "Within 2 weeks, my active acne reduced significantly without dryness or peeling. Very gentle.",
+      verified: true,
+      helpful: 24
+    },
+    {
+      id: 2,
+      user: "Daniel H.",
+      rating: 4,
+      date: "2024-07-21",
+      title: "Good for mild acne",
+      comment: "Works well for small breakouts, but for severe acne I pair it with a stronger treatment.",
+      verified: true,
+      helpful: 13
+    }
+  ],
+  inStock: true,
+  volume: "50ml",
+  shelfLife: "24 months"
+}
+,
   4: {
-    id: 4,
-    name: "Gentle Cleansing Oil",
-    brand: "DermaCare",
-    web: "https://amzn.in/d/7kVt2pO",
-    shortDescription: "Lightweight oil cleanser that melts away makeup and impurities",
-    longDescription: "Our Gentle Cleansing Oil effortlessly dissolves makeup, sunscreen, and impurities without stripping the skin's natural moisture. Infused with nourishing botanical oils and Vitamin E, it transforms into a milky emulsion upon contact with water, leaving your skin clean, soft, and refreshed.",
-    price: 145,
-    originalPrice: 180,
-    discount: 19,
-    rating: 4.7,
-    reviewCount: 768,
-    images: [
-      "https://m.media-amazon.com/images/I/61oIabM6jWL._SX679_.jpg",
-      "https://m.media-amazon.com/images/I/71VTFVzXrKL._SX679_.jpg",
-      "https://m.media-amazon.com/images/I/81pG2Zf1pQL._SX679_.jpg"
-    ],
-    category: "Cleansers",
-    skinType: ["Normal", "Dry", "Oily", "Combination", "Sensitive"],
-    concerns: ["Makeup removal", "Clogged pores", "Dryness", "Dullness"],
-    benefits: [
-      "Removes waterproof makeup and sunscreen",
-      "Maintains skin's natural moisture",
-      "Prevents clogged pores",
-      "Soothes and nourishes skin",
-      "Leaves skin soft and refreshed"
-    ],
-    ingredients: [
-      { name: "Sunflower Seed Oil", percentage: "40%", purpose: "Gentle cleansing and nourishing" },
-      { name: "Jojoba Oil", percentage: "15%", purpose: "Balances sebum and prevents dryness" },
-      { name: "Sweet Almond Oil", percentage: "20%", purpose: "Softens and conditions skin" },
-      { name: "Vitamin E", percentage: "1%", purpose: "Antioxidant protection" },
-      { name: "Chamomile Extract", percentage: "2%", purpose: "Soothing and calming effect" }
-    ],
-    usage: [
-      "Apply 2-3 pumps to dry face and massage gently",
-      "Focus on areas with heavy makeup or sunscreen",
-      "Add a small amount of water to emulsify into a milky texture",
-      "Rinse thoroughly with lukewarm water",
-      "Follow with a water-based cleanser for double cleansing"
-    ],
-    beforeAfter: [
-      { before: "/api/placeholder/300/400", after: "/api/placeholder/300/400", timeframe: "2 weeks" },
-      { before: "/api/placeholder/300/400", after: "/api/placeholder/300/400", timeframe: "6 weeks" }
-    ],
-    reviews: [
-      {
-        id: 1,
-        user: "Sofia M.",
-        rating: 5,
-        date: "2024-04-10",
-        title: "Perfect first cleanser",
-        comment: "Melts off all my makeup, even waterproof mascara, without leaving a greasy residue. Love it!",
-        verified: true,
-        helpful: 18
-      },
-      {
-        id: 2,
-        user: "Ravi S.",
-        rating: 4,
-        date: "2024-04-22",
-        title: "Gentle and effective",
-        comment: "Works great for my oily skin. Doesn't break me out and leaves my skin fresh.",
-        verified: true,
-        helpful: 9
-      }
-    ],
-    inStock: true,
-    volume: "150ml",
-    shelfLife: "18 months"
-  },
+  id: 4,
+  name: "Ultra Hydrating Barrier Cream",
+  brand: "DermaCare",
+  web: "https://amzn.in/d/2yGh4mJ",
+  shortDescription: "Rich cream that restores and strengthens the skin’s natural barrier",
+  longDescription: "Protect and deeply nourish your skin with our Ultra Hydrating Barrier Cream. Formulated with ceramides, squalane, and hyaluronic acid, this dermatologist-developed cream locks in moisture, repairs barrier function, and calms irritation. Ideal for dry, sensitive, or compromised skin, it delivers long-lasting hydration without feeling heavy or greasy.",
+  price: 165,
+  originalPrice: 210,
+  discount: 21,
+  rating: 4.8,
+  reviewCount: 823,
+  images: [
+    "https://m.media-amazon.com/images/I/61Xx5Z3UeUL._SX679_.jpg",
+    "https://m.media-amazon.com/images/I/71Zf2jJoXxL._SX679_.jpg",
+    "https://m.media-amazon.com/images/I/81oV6d0AALL._SX679_.jpg"
+  ],
+  category: "Moisturizers",
+  skinType: ["Dry", "Sensitive", "Normal", "Combination"],
+  concerns: ["Dryness", "Barrier damage", "Irritation", "Dehydration"],
+  benefits: [
+    "Restores and strengthens skin barrier",
+    "Provides 48-hour intense hydration",
+    "Soothes irritation and redness",
+    "Prevents transepidermal water loss",
+    "Leaves skin soft, supple, and resilient"
+  ],
+  ingredients: [
+    { name: "Ceramides", percentage: "3%", purpose: "Rebuilds and protects skin barrier" },
+    { name: "Squalane", percentage: "5%", purpose: "Deep moisturization without greasiness" },
+    { name: "Hyaluronic Acid", percentage: "1%", purpose: "Locks in hydration" },
+    { name: "Shea Butter", percentage: "7%", purpose: "Softens and nourishes dry skin" },
+    { name: "Allantoin", percentage: "0.5%", purpose: "Calms irritation and promotes healing" }
+  ],
+  usage: [
+    "Apply morning and evening on cleansed face and neck",
+    "Use after serums and treatments",
+    "Massage gently until absorbed",
+    "Can be used as an overnight repair cream",
+    "Safe for daily use, even on sensitive skin"
+  ],
+  beforeAfter: [
+    { before: "/api/placeholder/300/400", after: "/api/placeholder/300/400", timeframe: "2 weeks" },
+    { before: "/api/placeholder/300/400", after: "/api/placeholder/300/400", timeframe: "6 weeks" }
+  ],
+  reviews: [
+    {
+      id: 1,
+      user: "Meera D.",
+      rating: 5,
+      date: "2024-08-14",
+      title: "A lifesaver for dry skin",
+      comment: "This cream saved my skin barrier! My dryness and redness improved within a week of use.",
+      verified: true,
+      helpful: 22
+    },
+    {
+      id: 2,
+      user: "Lucas P.",
+      rating: 4,
+      date: "2024-08-27",
+      title: "Rich but not greasy",
+      comment: "Keeps my skin hydrated all day without feeling heavy. Works especially well in winter.",
+      verified: true,
+      helpful: 15
+    }
+  ],
+  inStock: true,
+  volume: "50ml",
+  shelfLife: "24 months"
+}
+,
   5: {
-    id: 5,
-    name: "SPF 50 Mineral Sunscreen",
-    brand: "DermaCare",
-    web: "https://amzn.in/d/9kTz5sP",
-    shortDescription: "Broad-spectrum mineral sunscreen with SPF 50 for daily protection",
-    longDescription: "Protect your skin from harmful UVA and UVB rays with our lightweight SPF 50 Mineral Sunscreen. Formulated with 100% mineral filters—zinc oxide and titanium dioxide—this non-greasy sunscreen provides broad-spectrum protection while soothing and nourishing the skin. Ideal for sensitive skin, it blends easily without leaving a heavy white cast.",
-    price: 175,
-    originalPrice: 220,
-    discount: 20,
-    rating: 4.6,
-    reviewCount: 1152,
-    images: [
-      "https://m.media-amazon.com/images/I/61nQK3yT8kL._SX679_.jpg",
-      "https://m.media-amazon.com/images/I/71wH1CBlXPL._SX679_.jpg",
-      "https://m.media-amazon.com/images/I/81uQxjAwLXL._SX679_.jpg"
-    ],
-    category: "Sunscreens",
-    skinType: ["Normal", "Oily", "Dry", "Combination", "Sensitive"],
-    concerns: ["Sun protection", "Premature aging", "Dark spots", "Sensitivity"],
-    benefits: [
-      "Broad-spectrum UVA/UVB protection",
-      "SPF 50 PA+++ rating",
-      "Non-comedogenic and fragrance-free",
-      "Lightweight and fast-absorbing",
-      "Soothes and protects sensitive skin"
-    ],
-    ingredients: [
-      { name: "Zinc Oxide", percentage: "20%", purpose: "Broad-spectrum UV protection" },
-      { name: "Titanium Dioxide", percentage: "5%", purpose: "UV filter and sun protection" },
-      { name: "Niacinamide", percentage: "2%", purpose: "Brightens skin and improves barrier" },
-      { name: "Vitamin E", percentage: "1%", purpose: "Antioxidant and skin repair" },
-      { name: "Green Tea Extract", percentage: "2%", purpose: "Soothes and fights free radicals" }
-    ],
-    usage: [
-      "Apply generously 15 minutes before sun exposure",
-      "Use as the last step in your morning routine",
-      "Reapply every 2 hours when outdoors",
-      "Reapply immediately after swimming or sweating",
-      "Safe for daily use under makeup"
-    ],
-    beforeAfter: [
-      { before: "/api/placeholder/300/400", after: "/api/placeholder/300/400", timeframe: "4 weeks" },
-      { before: "/api/placeholder/300/400", after: "/api/placeholder/300/400", timeframe: "12 weeks" }
-    ],
-    reviews: [
-      {
-        id: 1,
-        user: "Aditi V.",
-        rating: 5,
-        date: "2024-05-03",
-        title: "Finally a mineral sunscreen I love!",
-        comment: "Doesn't clog pores, blends well, and gives me a healthy glow without irritation.",
-        verified: true,
-        helpful: 27
-      },
-      {
-        id: 2,
-        user: "Mark T.",
-        rating: 4,
-        date: "2024-05-19",
-        title: "Great for sensitive skin",
-        comment: "No stinging around my eyes like chemical sunscreens. A slight white cast, but it fades quickly.",
-        verified: true,
-        helpful: 14
-      }
-    ],
-    inStock: true,
-    volume: "50ml",
-    shelfLife: "24 months"
-  },
+  id: 5,
+  name: "Calming Sensitivity Relief Gel",
+  brand: "DermaCare",
+  web: "https://amzn.in/d/5nSk4cB",
+  shortDescription: "Lightweight gel that soothes redness and calms sensitive skin",
+  longDescription: "Soothe and comfort your skin with our Calming Sensitivity Relief Gel. Powered by Centella Asiatica, aloe vera, and licorice root extract, this refreshing gel reduces redness, calms irritation, and strengthens the skin barrier. Its oil-free, fast-absorbing texture makes it perfect for sensitive, reactive, or post-treatment skin.",
+  price: 135,
+  originalPrice: 170,
+  discount: 21,
+  rating: 4.7,
+  reviewCount: 611,
+  images: [
+    "https://m.media-amazon.com/images/I/61iV3ry5gUL._SX679_.jpg",
+    "https://m.media-amazon.com/images/I/71lX-9x2mNL._SX679_.jpg",
+    "https://m.media-amazon.com/images/I/81S9M6i7pWL._SX679_.jpg"
+  ],
+  category: "Moisturizers",
+  skinType: ["Sensitive", "Normal", "Combination", "Oily"],
+  concerns: ["Redness", "Sensitivity", "Irritation", "Post-treatment skin"],
+  benefits: [
+    "Soothes irritation and redness",
+    "Provides lightweight hydration",
+    "Strengthens skin barrier",
+    "Calms sensitive and reactive skin",
+    "Fast-absorbing and non-greasy"
+  ],
+  ingredients: [
+    { name: "Centella Asiatica Extract", percentage: "5%", purpose: "Soothes and repairs sensitive skin" },
+    { name: "Aloe Vera Extract", percentage: "8%", purpose: "Hydrates and cools irritation" },
+    { name: "Licorice Root Extract", percentage: "2%", purpose: "Reduces redness and brightens skin tone" },
+    { name: "Panthenol (Pro-Vitamin B5)", percentage: "2%", purpose: "Moisturizes and supports healing" },
+    { name: "Green Tea Extract", percentage: "1%", purpose: "Provides antioxidants and calms skin" }
+  ],
+  usage: [
+    "Apply evenly to face and neck after cleansing",
+    "Use morning and evening",
+    "Can be layered under moisturizer or sunscreen",
+    "Reapply as needed on irritated areas",
+    "Suitable for daily use and post-sun exposure"
+  ],
+  beforeAfter: [
+    { before: "/api/placeholder/300/400", after: "/api/placeholder/300/400", timeframe: "2 weeks" },
+    { before: "/api/placeholder/300/400", after: "/api/placeholder/300/400", timeframe: "6 weeks" }
+  ],
+  reviews: [
+    {
+      id: 1,
+      user: "Hannah W.",
+      rating: 5,
+      date: "2024-09-10",
+      title: "Instant calming effect",
+      comment: "My redness goes down within minutes of applying this gel. Super gentle and cooling!",
+      verified: true,
+      helpful: 20
+    },
+    {
+      id: 2,
+      user: "Rahul M.",
+      rating: 4,
+      date: "2024-09-18",
+      title: "Great for sensitive skin",
+      comment: "Lightweight and soothing. Works well after shaving or sun exposure.",
+      verified: true,
+      helpful: 12
+    }
+  ],
+  inStock: true,
+  volume: "50ml",
+  shelfLife: "18 months"
+}
+,
   6: {
-    id: 6,
-    name: "Peptide Eye Cream",
-    brand: "DermaCare",
-    web: "https://amzn.in/d/3pXy7eQ",
-    shortDescription: "Targeted eye cream with peptides to reduce fine lines and puffiness",
-    longDescription: "Revitalize your under-eye area with our Peptide Eye Cream. Formulated with a powerful blend of peptides, caffeine, hyaluronic acid, and botanical extracts, this lightweight cream helps smooth fine lines, reduce puffiness, and brighten dark circles. Gentle enough for daily use, it absorbs quickly to leave your eyes refreshed and youthful-looking.",
-    price: 139,
-    originalPrice: 175,
-    discount: 21,
-    rating: 4.7,
-    reviewCount: 689,
-    images: [
-      "https://m.media-amazon.com/images/I/61tXrBrA0sL._SX679_.jpg",
-      "https://m.media-amazon.com/images/I/71AqY6xYFCL._SX679_.jpg",
-      "https://m.media-amazon.com/images/I/81wRbbUdfuL._SX679_.jpg"
-    ],
-    category: "Eye Care",
-    skinType: ["Normal", "Dry", "Oily", "Combination", "Sensitive"],
-    concerns: ["Dark circles", "Fine lines", "Puffiness", "Dehydration"],
-    benefits: [
-      "Reduces appearance of fine lines and wrinkles",
-      "Brightens dark circles",
-      "De-puffs under-eye area",
-      "Deeply hydrates delicate skin",
-      "Supports collagen production"
-    ],
-    ingredients: [
-      { name: "Peptide Complex", percentage: "3%", purpose: "Stimulates collagen and firms skin" },
-      { name: "Caffeine", percentage: "2%", purpose: "Reduces puffiness and brightens" },
-      { name: "Hyaluronic Acid", percentage: "1%", purpose: "Hydrates and plumps skin" },
-      { name: "Niacinamide", percentage: "2%", purpose: "Brightens dark circles and improves texture" },
-      { name: "Chamomile Extract", percentage: "1%", purpose: "Soothes sensitive skin" }
-    ],
-    usage: [
-      "Apply a small amount to under-eye area morning and night",
-      "Use ring finger to gently tap into skin",
-      "Avoid direct contact with eyes",
-      "Can be worn under makeup",
-      "For best results, use consistently for 6–8 weeks"
-    ],
-    beforeAfter: [
-      { before: "/api/placeholder/300/400", after: "/api/placeholder/300/400", timeframe: "4 weeks" },
-      { before: "/api/placeholder/300/400", after: "/api/placeholder/300/400", timeframe: "10 weeks" }
-    ],
-    reviews: [],
-    inStock: true,
-    volume: "30ml",
-    shelfLife: "18 months"
-  }
+  id: 6,
+  name: "Pore Minimizing Treatment Mask",
+  brand: "DermaCare",
+  web: "https://amzn.in/d/4tVm2pQ",
+  shortDescription: "Detoxifying clay mask that reduces the appearance of pores and refines skin texture",
+  longDescription: "Unclog and minimize pores with our Pore Minimizing Treatment Mask. Formulated with kaolin clay, niacinamide, and salicylic acid, this purifying mask absorbs excess oil, clears impurities, and smooths skin texture. Enhanced with soothing botanicals, it leaves skin fresh, matte, and refined without over-drying.",
+  price: 155,
+  originalPrice: 195,
+  discount: 21,
+  rating: 4.6,
+  reviewCount: 732,
+  images: [
+    "https://m.media-amazon.com/images/I/61FfuzV7vQL._SX679_.jpg",
+    "https://m.media-amazon.com/images/I/71OQzoT5bCL._SX679_.jpg",
+    "https://m.media-amazon.com/images/I/81nnzj1x6pL._SX679_.jpg"
+  ],
+  category: "Masks",
+  skinType: ["Oily", "Combination", "Normal"],
+  concerns: ["Large pores", "Excess oil", "Clogged pores", "Uneven texture"],
+  benefits: [
+    "Visibly reduces pore size",
+    "Absorbs excess oil and shine",
+    "Clears out impurities and toxins",
+    "Improves skin texture",
+    "Leaves skin fresh and matte"
+  ],
+  ingredients: [
+    { name: "Kaolin Clay", percentage: "25%", purpose: "Absorbs oil and detoxifies pores" },
+    { name: "Bentonite Clay", percentage: "15%", purpose: "Deep cleansing and tightening effect" },
+    { name: "Niacinamide", percentage: "4%", purpose: "Refines pores and brightens skin" },
+    { name: "Salicylic Acid", percentage: "1.5%", purpose: "Exfoliates inside pores to prevent clogging" },
+    { name: "Green Tea Extract", percentage: "2%", purpose: "Provides antioxidants and soothes skin" }
+  ],
+  usage: [
+    "Apply an even layer to clean, dry skin",
+    "Avoid eye and lip areas",
+    "Leave on for 10–15 minutes until partially dry",
+    "Rinse thoroughly with lukewarm water",
+    "Use 1–2 times per week"
+  ],
+  beforeAfter: [
+    { before: "/api/placeholder/300/400", after: "/api/placeholder/300/400", timeframe: "3 weeks" },
+    { before: "/api/placeholder/300/400", after: "/api/placeholder/300/400", timeframe: "8 weeks" }
+  ],
+  reviews: [
+    {
+      id: 1,
+      user: "Sophia L.",
+      rating: 5,
+      date: "2024-10-05",
+      title: "My pores look so much smaller!",
+      comment: "After 4 uses, my skin looks smoother and my pores are less noticeable. Great mask for oily skin.",
+      verified: true,
+      helpful: 23
+    },
+    {
+      id: 2,
+      user: "Arjun K.",
+      rating: 4,
+      date: "2024-10-16",
+      title: "Good for weekly detox",
+      comment: "Cleanses deeply and controls oil well. I use it once a week and it keeps my T-zone balanced.",
+      verified: true,
+      helpful: 14
+    }
+  ],
+  inStock: true,
+  volume: "100ml",
+  shelfLife: "18 months"
+}, 
+7: {
+  id: 7,
+  name: "Radiance Boosting Serum",
+  brand: "DermaCare",
+  web: "https://amzn.in/d/8kLz9vB",
+  shortDescription: "Brightening serum with Vitamin C and antioxidants for glowing skin",
+  longDescription: "Achieve a luminous, even-toned complexion with our Radiance Boosting Serum. Packed with stabilized Vitamin C, hyaluronic acid, and botanical extracts, this lightweight serum brightens dull skin, fades dark spots, and defends against environmental stressors. Its fast-absorbing formula delivers hydration and radiance without stickiness, making it perfect for daily use.",
+  price: 159,
+  originalPrice: 199,
+  discount: 20,
+  rating: 4.8,
+  reviewCount: 1045,
+  images: [
+    "https://m.media-amazon.com/images/I/61jRfoJQpWL._SX679_.jpg",
+    "https://m.media-amazon.com/images/I/71VrFqfT2rL._SX679_.jpg",
+    "https://m.media-amazon.com/images/I/81cwz6zXq6L._SX679_.jpg"
+  ],
+  category: "Serums",
+  skinType: ["Normal", "Dry", "Oily", "Combination"],
+  concerns: ["Dullness", "Dark spots", "Uneven tone", "Environmental damage"],
+  benefits: [
+    "Brightens and evens skin tone",
+    "Fades dark spots and hyperpigmentation",
+    "Boosts natural radiance",
+    "Hydrates and plumps skin",
+    "Protects against free radicals"
+  ],
+  ingredients: [
+    { name: "Vitamin C (Ethyl Ascorbic Acid)", percentage: "10%", purpose: "Brightens and reduces pigmentation" },
+    { name: "Hyaluronic Acid", percentage: "1%", purpose: "Provides deep hydration" },
+    { name: "Niacinamide", percentage: "4%", purpose: "Improves skin tone and barrier" },
+    { name: "Licorice Root Extract", percentage: "2%", purpose: "Reduces dark spots and soothes skin" },
+    { name: "Vitamin E", percentage: "1%", purpose: "Antioxidant and skin repair" }
+  ],
+  usage: [
+    "Apply 3–4 drops to cleansed face and neck in the morning",
+    "Gently pat until fully absorbed",
+    "Follow with moisturizer and sunscreen",
+    "Can be layered with hydrating serums",
+    "Avoid mixing directly with strong exfoliants or retinol"
+  ],
+  beforeAfter: [
+    { before: "/api/placeholder/300/400", after: "/api/placeholder/300/400", timeframe: "4 weeks" },
+    { before: "/api/placeholder/300/400", after: "/api/placeholder/300/400", timeframe: "10 weeks" }
+  ],
+  reviews: [
+    {
+      id: 1,
+      user: "Kavya S.",
+      rating: 5,
+      date: "2024-11-12",
+      title: "My skin is glowing!",
+      comment: "This serum made my skin so much brighter and smoother within a month. Works beautifully under sunscreen.",
+      verified: true,
+      helpful: 28
+    },
+    {
+      id: 2,
+      user: "Michael B.",
+      rating: 4,
+      date: "2024-11-25",
+      title: "Great Vitamin C option",
+      comment: "Gentle, effective, and doesn’t sting like other Vitamin C serums I’ve tried. Would love a larger bottle.",
+      verified: true,
+      helpful: 16
+    }
+  ],
+  inStock: true,
+  volume: "30ml",
+  shelfLife: "18 months"
+},
+8: {
+  id: 11,
+  name: "Rosacea Soothing Complex",
+  brand: "DermaCare",
+  web: "https://amzn.in/d/7rFx3qL",
+  shortDescription: "Gentle treatment for redness and irritation associated with rosacea",
+  longDescription: "Calm and strengthen sensitive, rosacea-prone skin with our Rosacea Soothing Complex. Infused with niacinamide, allantoin, and licorice root extract, this lightweight formula reduces visible redness, soothes irritation, and fortifies the skin barrier. Ideal for daily use, it helps maintain comfort and skin resilience even in reactive skin.",
+  price: 162,
+  originalPrice: 200,
+  discount: 19,
+  rating: 4.7,
+  reviewCount: 524,
+  images: [
+    "https://m.media-amazon.com/images/I/61bFyX3LxQL._SX679_.jpg",
+    "https://m.media-amazon.com/images/I/71lFv7G8rJL._SX679_.jpg",
+    "https://m.media-amazon.com/images/I/81cGvX7FxML._SX679_.jpg"
+  ],
+  category: "Treatments",
+  skinType: ["Sensitive", "Dry", "Combination"],
+  concerns: ["Redness", "Rosacea flare-ups", "Irritation", "Sensitivity"],
+  benefits: [
+    "Reduces visible redness and flushing",
+    "Soothes irritation and discomfort",
+    "Strengthens and protects skin barrier",
+    "Hydrates sensitive skin",
+    "Suitable for daily use on reactive skin"
+  ],
+  ingredients: [
+    { name: "Niacinamide", percentage: "4%", purpose: "Reduces redness and strengthens barrier" },
+    { name: "Allantoin", percentage: "1%", purpose: "Soothes irritation and promotes healing" },
+    { name: "Licorice Root Extract", percentage: "2%", purpose: "Brightens skin and calms inflammation" },
+    { name: "Panthenol (Pro-Vitamin B5)", percentage: "2%", purpose: "Hydrates and repairs skin" },
+    { name: "Aloe Vera Extract", percentage: "5%", purpose: "Calms and cools sensitive skin" }
+  ],
+  usage: [
+    "Apply a thin layer to affected areas morning and evening",
+    "Can be used under moisturizer or sunscreen",
+    "Avoid contact with eyes",
+    "Use consistently for best results",
+    "Suitable for post-procedure or reactive skin"
+  ],
+  beforeAfter: [
+    { before: "/api/placeholder/300/400", after: "/api/placeholder/300/400", timeframe: "3 weeks" },
+    { before: "/api/placeholder/300/400", after: "/api/placeholder/300/400", timeframe: "8 weeks" }
+  ],
+  reviews: [
+    {
+      id: 1,
+      user: "Elena P.",
+      rating: 5,
+      date: "2024-12-01",
+      title: "Redness reduced significantly",
+      comment: "My rosacea flare-ups have calmed down and my skin feels stronger. Very gentle and effective.",
+      verified: true,
+      helpful: 18
+    },
+    {
+      id: 2,
+      user: "Arun V.",
+      rating: 4,
+      date: "2024-12-12",
+      title: "Good for sensitive skin",
+      comment: "Lightweight and soothing, my redness is less noticeable after consistent use. A bit pricey but worth it.",
+      verified: true,
+      helpful: 12
+    }
+  ],
+  inStock: true,
+  volume: "50ml",
+  shelfLife: "18 months"
+}
+
 };
 
 // Related products data
