@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Eye, EyeOff, Mail, Lock, ArrowRight } from "lucide-react";
-import { authClient } from "@/lib/auth-client";
+import { authClient, useSession } from "@/lib/auth-client";
 import { useRouter } from "next/navigation";
 import { toast } from "sonner";
 
@@ -24,6 +24,7 @@ export default function LoginPage() {
   const [showPassword, setShowPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
+  const { refetch } = useSession();
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -37,7 +38,7 @@ export default function LoginPage() {
     e.preventDefault();
     setIsLoading(true);
     try {
-      const { error } = await authClient.signIn.email({
+      const { data, error } = await authClient.signIn.email({
         email: formData.email,
         password: formData.password,
         rememberMe,
@@ -50,6 +51,14 @@ export default function LoginPage() {
         return;
       }
 
+      // Store bearer token if present in response
+      if (data?.token) {
+        localStorage.setItem("bearer_token", data.token);
+      }
+
+      // Refetch session to ensure authentication state is updated
+      await refetch();
+      
       toast.success("Signed in successfully");
       router.push("/analysis");
     } catch (err) {
